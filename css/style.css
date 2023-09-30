@@ -1,0 +1,88 @@
+:root {
+    /* color variables */
+    --orange: #e47940;
+    --grey: #b8b8b8;
+    --black: #100e0f;
+    --gray: #fcf9f0;
+    --white: #ffffff;
+  
+    /* size variables */
+  
+    /* on va definir si selon le 
+    media query la variable css */
+  
+    --main-h1: 6.4rem;
+    --main-h2: 5.6rem;
+    --main-h3: 4.8rem;
+    --main-h4: 4rem;
+    --main-h5: 3.2rem;
+    --main-h6: 2.4rem;
+    --main-bl: 1.8rem;
+    --main-br: 1.6rem;
+    --main-bs: 1.4rem;
+    --main-p: 1.6rem;
+  
+    /* --pane-padding: 5px 42px; */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* percentage of user's browser font-size setting = 10px, max = 16px */
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: var(--main-black);
+    color: var(--main-white);
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 1.6rem;
+  }
+  
+  a:link {
+    text-decoration: none ;
+  }
+  
+  .container {
+    width: 80%;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: 5rem;
+  }
+
+  .form{
+    display: flex ;
+    flex-direction: column ;
+    gap : 1rem ; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  input{
+    height: 4rem ;
+    width: 25%;
+    border-radius: 0.8rem;
+    border: 0;
+  }
+  input::placeholder{
+    font-weight: bold;
+    opacity: 0.5;
+    color: var(--orange);
+    text-align: center !important;
+  }
+  input:focus{
+    border: 0.3rem solid var(--grey);
+  }
+  #submit{
+    background-color: var(--orange);
+  }
+
+.title{
+    color: var(--orange);
+}
