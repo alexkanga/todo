@@ -64,7 +64,9 @@
     flex-wrap: wrap;
   }
 
-  input{
+
+
+  .form input{
     height: 4rem ;
     width: 25%;
     border-radius: 0.8rem;
@@ -81,8 +83,46 @@
   }
   #submit{
     background-color: var(--orange);
+    color: var(--white);
+    font-weight: 600;
   }
+
+
 
 .title{
     color: var(--orange);
 }
+
+
+/* ******* */
+/* ADD TASK TODOLIST */
+
+.todo{
+    display: flex ;
+    flex-direction: column ;
+    gap : 4rem ; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  #task{
+    height: 4rem ;
+    width: 50rem;
+    border-radius: 0.8rem;
+    border: 0;
+  }
